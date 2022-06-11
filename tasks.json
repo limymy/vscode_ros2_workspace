@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "label": "build",
+      "detail": "Build workspace (debug)",
+      "type": "shell",
+      "command": "colcon build  --cmake-args '-DCMAKE_BUILD_TYPE=RelWithDebInfo'",
+      "options": {
+        "cwd": "/home/bit/bitbot_ws"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "debug",
+      "detail": "Build workspace (debug)",
+      "type": "shell",
+      "command": "colcon build  --cmake-args '-DCMAKE_BUILD_TYPE=Debug'",
+      "options": {
+        "cwd": "/home/bit/bitbot_ws"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc"
+    }
+  ],
+  "version": "2.0.0"
+}
